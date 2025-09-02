@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+
+body{
+    background-image: url(utilities/handSignBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vh 7vh;
+    padding: 3vh 0;
+    padding-bottom: 3vh;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.menuContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 5vh
+}
+
+.home , .aboutUs , .howItWorks{
+    cursor: pointer;
+}
+
+.startBtn{
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.title{
+    /* font-family : cursive; */
+    font-size : 6vh;
+}
+
+.signHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+.handSignTitle{
+    /* width : 10vh; */
+    height : 35vh
+}
+
+.headingContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh;
+     */
+     gap : 5vh;
+     margin-bottom : 3vw;
+}
+
+.headingWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap : 2vh;
+    padding : 2vh 40vh;
+    text-align: center;
+    /* color : #fff; */
+}
+
+.headingWrapper>h2{
+    font-size: 8vh;
+    font-weight: 100;
+}
+
+.lower{
+    transform: translateY(5vh);
+}
+
+.boxContent{
+    /* height : 100vh; */
+    width : 100%;
+    background-color: rgb(233, 238, 238);
+    padding :5vw 3vw;
+    display : flex;
+    flex-direction: column;
+    gap : 4vw;
+}
+
+.boxContainer{
+    display : flex;
+    flex-wrap: wrap;
+    gap : 5vw;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.boxContent>h1{
+    font-size : 4vw;
+    font-weight : 100;
+}
+
+.boxes{
+    border : 2px solid black;
+    display : flex;
+    flex-direction: column;
+    gap : 1vw;
+    flex : 1 1 40w;
+    padding : 2vw;
+    /* width : 40vw; */
+    border-radius: 1vw;
+    border-bottom: 7px solid black;
+    cursor : pointer;
+}
+
+.workflowWrapper{
+    padding : 3vw 5vw;  
+}
+.workflowWrapper>h1{
+    font-size : 4vw;
+    font-weight : 100;
+    padding : 2vw 0;
+}
+
+.steps>img{
+    height : 4vw;
+}
