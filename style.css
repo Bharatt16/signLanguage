@@ -82,7 +82,7 @@ nav{
     align-items: center;
     justify-content: center;
     gap : 2vh;
-    padding : 2vh 40vh;
+    padding : 3vw 19vw;
     text-align: center;
     /* color : #fff; */
 }
@@ -158,8 +158,9 @@ nav{
     border : 1px solid black;
     padding : 2vw;
     cursor: pointer;
-    background-color: rgb(233, 238, 238,0.5);
-    border-bottom: 3px solid rgb(65, 62, 62);
+    background-color: rgb(233, 238, 238,0.7);
+    border-bottom: 4px solid rgb(65, 62, 62);
+    border-radius: 2vw 0 ;
 
 }
 
@@ -171,4 +172,53 @@ nav{
 
 .contentWrapper>h2{
     font-weight : 100;
+}
+
+.handsSigns{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding :5vw 3vw;
+    background-color: #fff;
+    flex-direction: column;
+    gap : 2vw
+}
+
+.handsSigns>h2{
+    font-size : 5vw;
+    font-weight: 100;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 4px;
+    color :rgb(65, 62, 62)
+}
+
+.handsSigns>img{
+    height : 50vw;
+}
+
+.cameraWrapper{
+    padding : 3vw 5vw;  
+    text-align: center;
+    gap : 1vw;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.cameraBox{
+    height : 25vw;
+    width : 60vw;
+    border : 1px solid black;
+}
+
+.cameraWrapper>button{
+    /* width : 40px; */
+    padding : 1vw;
+    font-size: 1.5vw;
+}
+
+.cameraWrapper>h1{
+    font-size: 5vw;
 }

@@ -87,7 +87,7 @@ home.addEventListener('click',()=>{
           </h2>
 
           <p>
-            studying asl promotes better awareness of and sensitivity to the
+            Studying asl promotes better awareness of and sensitivity to the
             deaf and hard of hearing community. SYGNAL is all you need to
             communicate with deaf and hard of hearing people.
           </p>
@@ -127,7 +127,24 @@ home.addEventListener('click',()=>{
             </p>
           </div>
         </div>
-      </div>`
+      </div>
+      
+      
+      
+      <div class="handsSigns">
+        <h2>Hands Signs</h2>
+        <img src="./utilities/handSigns.png" alt="handsSigns">
+      </div>
+
+
+      <div class="cameraWrapper">
+        <h1>space for camera</h1>
+        <div class="cameraBox"></div>
+        <button>start</button>
+      </div>
+      
+      
+      `
 });
 
 aboutUs.addEventListener('click',()=>{
