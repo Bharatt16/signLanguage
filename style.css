@@ -139,8 +139,36 @@ nav{
     font-size : 4vw;
     font-weight : 100;
     padding : 2vw 0;
+    margin-bottom : 2vw;
 }
 
 .steps>img{
-    height : 4vw;
+    height : 3vw;
+}
+
+.stepsContainer{
+    display: flex;
+    flex-direction: column;
+    gap : 2vw;
+}
+
+.steps{
+    display : flex;
+    gap : 1.5vw;
+    border : 1px solid black;
+    padding : 2vw;
+    cursor: pointer;
+    background-color: rgb(233, 238, 238,0.5);
+    border-bottom: 3px solid rgb(65, 62, 62);
+
+}
+
+.contentWrapper{
+    display : flex;
+    flex-direction: column;
+
+}
+
+.contentWrapper>h2{
+    font-weight : 100;
 }
