@@ -189,6 +189,15 @@ document.getElementById("navbar").addEventListener("click", function(event) {
   if (page && pageContent.hasOwnProperty(page)) {
     main.innerHTML = pageContent[page];
   }
+
+   // remove active class from all nav items
+   document.querySelectorAll("#navbar div").forEach(item => {
+    item.classList.remove("active");
+  });
+
+  // add active class to the clicked one
+  event.target.classList.add("active");
+
 });
 
 
@@ -203,3 +212,148 @@ startBtn.addEventListener("click", function() {
     }
   }, 100);
 });
+
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menuContainer");
+
+// toggle menu when hamburger clicked
+hamburger.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
+
+// close menu when any nav option is clicked
+menu.querySelectorAll("div, .startBtn").forEach(item => {
+  item.addEventListener("click", () => {
+    menu.classList.remove("show");
+  });
+});
+
+
+//Animations----->
+
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+/* === HOME SECTION === */
+gsap.from(".signHeading img", {
+  y: 50,
+  opacity: 0,
+  stagger: 0.2,
+  duration: 1.2,
+  ease: "back.out(1.7)"
+});
+
+gsap.from(".headingWrapper h2", {
+  opacity: 0,
+  y: 40,
+  duration: 1,
+  delay: 0.8,
+  ease: "power2.out"
+});
+
+gsap.from(".headingWrapper p", {
+  opacity: 0,
+  y: 30,
+  duration: 1,
+  delay: 1,
+  ease: "power2.out"
+});
+
+gsap.from(".boxContent .boxes", {
+  scrollTrigger: {
+    trigger: ".boxContent",
+    start: "top 30%",  // animate when section comes into view
+  },
+  y: 60,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
+  ease: "power3.out"
+});
+
+gsap.from(".handsSigns img", {
+  scrollTrigger: {
+    trigger: ".handsSigns",
+    start: "top 30%",
+  },
+  scale: 0.5,
+  opacity: 0,
+  duration: 1.2,
+  ease: "elastic.out(1, 0.6)"
+});
+
+gsap.from(".cameraWrapper", {
+  scrollTrigger: {
+    trigger: ".cameraWrapper",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 80,
+  duration: 1.2,
+  ease: "power2.out"
+});
+
+
+/* === ABOUT US === */
+gsap.from(".about-container h1", {
+  scrollTrigger: {
+    trigger: ".about-container",
+    start: "top 80%",
+  },
+  y: -40,
+  opacity: 0,
+  duration: 1
+});
+
+gsap.from(".intro", {
+  scrollTrigger: {
+    trigger: ".about-container",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 40,
+  duration: 1,
+  delay: 0.3
+});
+
+gsap.from(".about-card", {
+  scrollTrigger: {
+    trigger: ".about-grid",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 50,
+  stagger: 0.3,
+  duration: 1,
+  ease: "power2.out"
+});
+
+
+/* === HOW IT WORKS === */
+gsap.from(".workflowWrapper h1", {
+  scrollTrigger: {
+    trigger: ".workflowWrapper",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: -40,
+  duration: 1
+});
+
+gsap.from(".steps", {
+  scrollTrigger: {
+    trigger: ".stepsContainer",
+    start: "top 80%",
+  },
+  opacity: 0,
+  x: -60,
+  stagger: 0.3,
+  duration: 1,
+  ease: "power2.out"
+});
+
+
+
+
